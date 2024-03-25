@@ -3,210 +3,199 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>hip-hop电竞</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 24px;
+      box-sizing: border-box;
+    }
+
+    .gallery-container {
+      float: left;
+      width: 450px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .thumbnail-list {
+      padding-top: 12px;
+    }
+
+    .thumbnail {
+      display: inline-block;
+      width: 68px;
+      height: 68px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 9px;
+    }
+
+    .thumbnail:nth-child(1) {
+      margin-left: 0;
+    }
+
+    .product-details {
+      float: left;
+      margin-left: 21px;
+      width: calc(100% - 450px - 21px);
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 28px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .product-price {
+      margin-top: 14px;
+      color: #910dff;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .extra-price {
+      background-color: #910dff;
+      color: white;
+      padding: 0 10px;
+      border-radius: 20px;
+      margin-left: 8px;
+    }
+
+    .promotion-label,
+    .sku-label {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .promotion-info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .sku-options {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .sku-item {
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      margin: 0 4.5px 9px;
+      background-color: rgba(0, 0, 0, .06);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .sku-name {
+      font-size: 14px;
+      line-height: 30px;
+      color: #333;
+      max-width: 294px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .price-text {
+      font-size: 28px;
+      line-height: 28px;
+      vertical-align: baseline;
+    }
+
+    /* Additional CSS reset for delivery class to remove */
+    .delivery-info {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    /* Reset for all images to remove inline width and height */
+    img {
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="page-container">
+    <div class="gallery-container">
+      <img class="main-image" src="./images/top-main.webp">
 
-  <div class="header flex justify-between">
-    <img class="logo" src="./images/logo.png">
-    <ul>
-      <li>
-        <a href="https://www.baidu.com" target="_blank" style="color: white ;text-decoration:none;">hip-hop电竞</a>
-      </li>
-      <li>
-        <a href="https://www.taobao.com" target="_blank" style="color: white ;text-decoration:none;">hip-hop商城</a>
-      </li>
-      <li>
-        <a href="https://www.taobao.com" style="color: white ;text-decoration:none;">hip-hop品牌</a>
-      </li>
-      <li>
-        <a href="https://www.taobao.com" style="color: white ;text-decoration:none;">体验店</a>
-      </li>
-      <li>
-        <a href="https://www.taobao.com" style="color: white ;text-decoration:none;">投资者关系</a>
-      </li>
-    </ul>
-    <section class="login flex justify-between">
-      <span>登录</span>
-      <span>|</span>
-      <span>注册</span>
-    </section>
+      <div class="thumbnail-list">
+        <img class="thumbnail" src="./images/01.webp">
+        <img class="thumbnail" src="./images/02.webp">
+        <img class="thumbnail" src="./images/03.webp">
+        <img class="thumbnail" src="./images/04.webp">
+        <img class="thumbnail" src="./images/05.webp">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h1 class="product-title">HONOR/荣耀笔记本 X Plus系列 锐龙版新款AMD R7标压处理器轻薄本</h1>
+      <div class="product-price-wrapper">
+        <div style="color: rgb(145, 13, 255);">
+          <span>预售价¥</span>
+          <span class="price-text">4699</span>
+          <span>起</span>
+        </div>
+      </div>
+      <div class="promotion-info">
+        配送：广东深圳至北京市房山区 <br>
+        快递: 免运费 付尾款后48小时内发货
+      </div>
+      <div class="sku-wrapper">
+        <span class="sku-label">颜色分类：</span>
+        <div class="sku-options">
+          <div class="sku-item">
+            <span class="sku-name">【X16 Plus】R7 8845H/16G/512G/2.5K屏</span>
+          </div>
+          <div class="sku-item">
+            <span class="sku-name">【X16 Plus】R7 8845H/32G/1T/2.5K屏</span>
+          </div>
+        </div>
+        <span class="sku-label">硬盘容量：</span>
+        <div class="sku-options">
+          <div class="sku-item">
+            <span class="sku-name">512GB</span>
+          </div>
+          <div class="sku-item">
+            <span class="sku-name">1TB</span>
+          </div>
+        </div>
+        <span class="sku-label">内存容量：</span>
+        <div class="sku-options">
+          <div class="sku-item">
+            <span class="sku-name">16GB</span>
+          </div>
+          <div class="sku-item">
+            <span class="sku-name">32G</span>
+          </div>
+        </div>
+        <span class="sku-label">套餐类型：</span>
+        <div class="sku-options">
+          <div class="sku-item">
+            <span class="sku-name selectSkuText">官方标配</span>
+          </div>
+        </div>
+        <span class="sku-label">数量：(限购5件)</span>
+      </div>
+    </div>
   </div>
-  <div class="flex-end flex">
-    <input style="width: 330px" class="ns-border-color ns-text-color-black" type="text" id="keyword" value=""
-      placeholder="" data-search-words="">
-    <button class="btn btn-primary" type="button"><i class="iconfont iconfont_new">搜索</i></button>
-  </div>
-  <footer class="footer-with-bgimage">
-    <ul class="flex" style="height:100%">
-      <li>
-        <h3>
-          <a href="#" style="color: black;text-decoration:none;">帮助中心</a>
-        </h3>
-        <br>
-        <a href="#" style="color: black ;text-decoration:none;">配送方式</a>
-        <br><a href="#" style="color: black;text-decoration:none;">支付方式</a>
-        <br><a href="#" style="color: black;text-decoration:none;">购物指南</a>
-      </li>
-      <li>
-        <h3>服务支持</h3>
-        <br>服务标准
-
-        <br>下载中心
-
-        <br>保修政策
-      </li>
-      <li>
-        <h3>关于我们</h3>
-
-        <br>加入我们
-
-        <br>联系我们
-
-        <br>公司介绍
-      </li>
-      <li>
-        <h3>线下门店</h3>
-
-        <br>电竞服务
-
-        <br>线下网点
-
-        <br>售后网点
-      </li>
-      <li>
-        <h3>品牌咨询</h3>
-
-        <br>版权声明
-
-        <br>新闻中心
-
-        <br>营业执照
-      </li>
-    </ul>
-  </footer>
-  <footer class="flex bottom-footer">
-    <center>
-      © 2014-2023 www.hip-hopdianjing.com 北京hip-hop股份有限公司 版权所有 京ICP备66666666号-6
-    </center>
-  </footer>
 </body>
-<style>
-  html {
-    overflow-x: auto;
-    overflow-y: scroll;
-  }
-
-  body,
-  dl,
-  dt,
-  dd,
-  ul,
-  ol,
-  li,
-  pre,
-  form,
-  fieldset,
-  input,
-  p,
-  blockquote,
-  th,
-  td {
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h4,
-  h5 {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-color: #FFFFFF;
-    color: #666666;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    text-align: left;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .justify-between {
-    justify-content: space-between;
-  }
-
-  .header {
-    background-color: #242324ff;
-    height: 65px;
-    line-height: 65px;
-    color: #fff;
-    font-size: 16px;
-    padding: 0 20px;
-  }
-
-  .logo {
-    width: 74px;
-    height: 55px;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-
-    li {
-      margin-right: 120px;
-    }
-  }
-
-  .login {
-    width: 100px;
-  }
-
-  footer {
-    height: 118px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    margin-top: 30px;
-  }
-
-  .bottom-footer {
-    background-color: #e6e6e6ff;
-    height: 56px;
-    line-height: 56px;
-    text-align: center;
-    color: #666666ff;
-  }
-
-  .footer-with-bgimage {
-    background: url('./images/kuang.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    margin: 30px 16px;
-    padding: 20px;
-  }
-
-  h3 {
-    color: black;
-    margin: 0px 30px;
-    line-height: 26px;
-  }
-
-  .flex-end {
-    justify-content: flex-end;
-  }
-</style>
 
 </html>
